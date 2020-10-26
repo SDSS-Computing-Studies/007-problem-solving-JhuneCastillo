@@ -20,9 +20,9 @@ import pyautogui as p
 import time as t
 
 while True:
-    if p.pixelMatchesColor(1144, 419, (208, 52, 78)): #if the coordinate matches the pixel that i want, it double clicks it
+    if p.pixelMatchesColor(1144, 419, (208, 52, 78)): #if the coordinate matches the pixel it double clicks it
         p.doubleClick(1144, 444)
-    p.click(827, 478, clicks=200, interval=0.01)  # clicks the bank 200 times in 0.001 interval fast
+    p.click(827, 478, clicks=200, interval=0.01)  # clicks the bank 200 times in 0.01 interval fast
     p.click(408, 389)  # after the bank has been clicked 200 times it buys the cheapest one first and goes up to the highest price ones, this one here is the pickpocketer
     p.click(405, 461)  # Money earned per bag
     p.click(468, 388)  # mugger
